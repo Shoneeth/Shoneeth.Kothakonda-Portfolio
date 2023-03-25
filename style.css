@@ -1,0 +1,518 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family:'Poppins',sans-serif;
+}
+/*-----------------------navbar-------------------------*/
+body{
+      background: #001722;
+}
+.menu1{
+      font-size: 35px;
+      color: white;
+      float: right;
+      line-height: 70px;
+      margin-right: 20px;
+      cursor: pointer;
+      display: none;
+}
+header{
+      position:fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      padding: 15px 15px;
+      background: rgba(0, 0, 0, 0.968);
+}
+nav label img{
+      margin-top: 10px;
+      margin-left: 45px;
+}
+nav ul{
+      float: right;
+      margin-top: 10px;
+      margin-right: 20px;
+}
+nav ul li{
+      display: inline-flex;
+      padding: 0px 15px;
+      margin: 8px 5px;
+      /*float: right;*/
+}
+nav ul li a{
+      font-size: 17px;
+      color:white;
+      text-decoration: none;
+      text-transform:capitalize;
+
+}
+
+nav ul li a.active, nav ul li a:hover{
+      color: #e13658;
+      font-weight: bolder;
+      /*text-decoration:underline;*/
+      transition:all 0.4s ease;
+}
+/*--------------------------------sections-----------------*/
+/*section{
+      max-height: 100vh;
+      padding: 105px 0px;
+      background-color:#001722;
+}*/
+/*----------------home--------------------------------*/
+#home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 65px;
+      background-color:#001722;
+}
+.profile{
+      /*width: 35vw;*/
+      margin: 50px auto;
+      padding: 50px;
+}
+
+.profile img{
+      padding: 30px;
+}
+.txt{
+  color: white;
+  margin: 0px auto 0px auto;
+  padding: 0px 150px 0px 150px;
+}
+
+.txt h3{
+      font-size: 30px;
+}
+
+.txt h1{
+      font-size: 45px;
+}
+.txt h3 span{
+      color: #e13658;
+}
+
+
+.cv_btn{
+      padding: 5px 40px; 
+      margin-top: 20px;
+      border-radius: 10px;
+      background-color: #e13658;
+      border-width: 5px;
+      border-color: #e13658da;
+}
+.cv_btn a{
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+}
+/*---------------------------------works-----------------------------------*/
+.myworks {
+      position: relative;
+      display: block;
+      padding: 80px 65px;
+      background-color:#09293a;
+      color: whitesmoke;
+}
+.myworks h2{
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 35px;
+}
+
+.myworks .more{
+      text-align: center;
+}
+
+.more button{
+      padding: 15px 65px;
+      background-color: #e13658;
+      border-radius: 55px;
+      border: 0px;
+     /* transition: .5 ease;*/
+}
+.more a{
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+}
+.more a:hover{
+      font-size: 21px ;
+      transition: .5 ease;
+}
+
+.myworks h2 span{
+      color:#e13658;
+}
+
+
+.projects_container{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      align-items: center;
+      gap: 50px;
+      margin: auto;
+      padding: 0px 0px 50px 0px;
+}
+
+.projects_container .projects_Box{
+      position:relative;
+      border-radius: 25px;
+      box-shadow: 0 0 15px #251f1f;
+      overflow: hidden;
+      display: flex;
+}
+
+.projects_Box img{
+      width: 100%;
+      border-radius: 25px;
+      transition: .5s ease;
+}
+
+.projects_Box:hover img{
+   transform: scale(1.1);
+}
+.projects_Box .projects_layer{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height:100%;
+      background:linear-gradient(rgba(0, 0 ,0, 0.9),#1f73a3);
+      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 10px;
+      transform: translateY(100%);
+      transition: .5s ease;
+}
+.projects_Box:hover .projects_layer{
+      transform: translateY(0%);
+}
+
+.projects_Box .projects_layer h3{
+      font-size: 1.5rem;
+}
+.projects_Box .projects_layer p{
+      text-align: center;
+      font-size: 0.8rem;
+      padding: 1rem;
+}
+.projects_layer .projects_links button{
+     display: inline-flex;
+     padding: 15px 25px;
+     margin-top: 30px;
+     margin-right: 10px;
+     background-color: #e13658;
+     border-radius: 10px;
+     border: 0px;
+     box-shadow: #251f1f;
+}
+
+.projects_layer .projects_links a{
+      font-size: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      color:white;
+ }
+
+/*-------------------------certification-----------------*/
+.certification {
+      display: block;
+      padding: 80px 65px;
+      background-color:#1c3948;
+      color: whitesmoke;
+}
+.certification h2{
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 35px;
+}
+
+.certification h2 span{
+      color:#e13658;
+}
+
+.certification .certy_container{
+      padding: 50px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      align-items: center;
+      gap: 50px;
+}
+
+.certification .certy_Box{
+      padding: 100px 50px;
+      background-color: #e13658;
+      text-align: center;
+      border-radius: 15px;
+      border-style:solid ;
+      box-shadow: 0 0 15px #251f1f;
+      transition: .5s ease;
+}
+
+.certy_container div:hover{
+      transform: scale(1.1);
+}
+
+.certy_Box a{
+      color: whitesmoke;
+      font-size: 21px;
+      font-weight: bold;
+      text-decoration: none;
+}
+/*----------------------contact-----------------------*/
+.contact {
+      display: block;
+      padding: 80px 65px;
+      background-color:#344852;
+      color: whitesmoke;
+}
+
+.contact label{
+      float: right;
+      border-radius: 50%;
+      transition: .5s ease-in-out;
+}
+
+.contact label:hover{
+      transform:scale(1.1);
+}
+
+.contact h2{
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 35px;
+}
+.contact h2 span{
+      color:#e13658;
+}
+.contact .dials h3{
+      color:#e13658;
+}
+.contact .dials span{
+      color:whitesmoke;
+      font-weight: 300;
+}
+.contact .dials{
+      display:inline-grid;
+      grid-template-rows: repeat(2);
+      gap: 10px;
+      padding: 0px 30px;
+}
+
+.contact .social{
+      font-size: 20px;
+      display: inline-flex;
+      flex-direction: column;
+      float: right;
+      padding: 0px 30px;
+}
+.social div{
+      padding: 10px;   
+}
+.social a{
+      padding: 0px 5px;
+      transition: .5s ease;
+}
+.social div :hover{
+      transform: scale(1.1);
+}
+.social img{
+      border-radius: 50%;
+      border: 1px;
+      border-style: solid;
+      border-color: rgb(224, 54, 88,0.9);
+      box-shadow: 0 0 10px #e13658;
+}
+/*---------------------footer--------------*/
+footer{
+      padding: 15px;
+      background-color: #1b262c;
+      color: whitesmoke;
+      text-align: center;
+}
+
+footer span{
+      color:#e13658;
+}
+
+/*--------------------------responsive-------------------*/
+/*breakpoints--------------*/
+/*ipad*/
+@media (max-width: 1050px){
+.profile img{
+      width: 350px;
+}
+.txt{
+      padding: 10px;
+}
+.txt h3{
+font-size: 20px;   
+}
+.txt .cv_btn a{
+      font-size: 17px;
+}
+.txt h1{
+      font-size: 25px;
+}
+.projects_Box .projects_layer h3{
+      font-size: 1rem;
+}
+.projects_Box .projects_layer p{
+      font-size: 0.5rem;
+}
+
+.projects_Box .projects_links button{
+      padding: 8px 15px;
+      margin-top: 10px;
+}
+
+.projects_Box .projects_links a{
+      font-size: 6px;
+}
+.certification .certy_container{
+      padding: 10px;
+      display: block;
+}
+.certification .certy_Box{
+      padding: 50px 0px;
+      margin: 15px 0px;
+}
+
+.dials h3{
+font-size: 15px;
+}
+.social h4{
+      font-size: 15px;
+}
+.social div a img{
+      width: 22px;
+}
+}
+/*mobile*/
+@media (max-width: 750px){
+     nav label img{
+            margin-top: 15px;
+            margin-left: 25px;
+     }
+    .menu1{
+      display: block;
+     } 
+     nav ul{
+      width:200%;
+      height: 0;
+      position:relative;
+      }
+     nav.act ul{
+      margin-top: 20px;
+      position:absolute;
+      width: 100%;
+      height:100vh;
+      background: rgba(0, 0, 0, 0.968);
+      left:0;
+      text-align: center;
+      transition: 0.5s;
+    }
+     nav ul li{
+      display: block;
+      font-size: 45px;
+    }
+    .body.act{
+      display: none;
+    }
+     .footer.act{
+      display:none;
+}
+#home {
+      display: grid;
+      grid-template-columns: auto;
+      background-color:#001722;
+}
+.profile img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      width: 250px;
+}
+.profile {
+      padding: 0;
+      margin: 0;
+}
+.txt{
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      flex-direction: column;
+      padding: 50px;
+}
+.txt h3{
+font-size: 15px;   
+}
+.txt .cv_btn a{
+      font-size: 10px;
+}
+.txt h1{
+      font-size: 20px;
+}
+/*----works---*/
+.projects_container{
+      display: block;
+}
+.projects_Box{
+      margin: 10px;
+}
+
+.more button{
+      padding: 10px 45px;
+      background-color: #e13658;
+      border-radius: 55px;
+      border: 0px;
+     /* transition: .5 ease;*/
+}
+.contact{
+      padding: 30px;
+      padding-bottom: 100px;
+}
+.contact h2{
+      margin-bottom: 20px;
+}
+.contact label img{
+      float: right;
+      border-radius: 50%;
+      transition: .5s ease-in-out;
+      width: 40px;
+}
+.contact .dials{
+      display: block;
+}
+.contact .dials h3{
+font-size: 15px;
+margin: 10px;
+font-weight:200;
+}
+.contact .social{
+      padding-top: 10px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.contact .social h4{
+      font-size: 18px;
+}
+.contact .social img{
+      width: 35px;
+}
+}
+/*----------end-----------*/
